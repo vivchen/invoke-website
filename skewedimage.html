@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Skewed image</title>
+<style type="text/css">
+
+#theImg {
+-webkit-transform: skew(-60deg,0deg); /* Safari and Chrome */
+}
+
+.inner {
+position: absolute;
+width: 240px;
+overflow:hidden;
+left:-35px;
+}
+
+#scroller {
+position: relative;
+width: 219px;
+height: 300px;
+margin-left: 395px;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="scroller" style="-webkit-transform: skew(30deg, 0deg)"> 
+	<div class="inner">
+	<img src="http://localhost/wp-content/themes/invoke-dmd/images/01.jpg" style="-webkit-transform: skew(-30deg,0deg); ">
+	<img src="http://www.clipartspace.com/clipart/winter/snowman-01.gif" style="-webkit-transform: skew(-30deg,0deg); ">
+	
+	</div>
+</div>
+
+</body>
+
+</html>
